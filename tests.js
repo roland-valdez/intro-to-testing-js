@@ -16,15 +16,18 @@ describe('helloWorld', function() {
 
 describe('sayHello', function(){
     it('is it a function that is called', function(){
-        expect(typeof sayHello).toBe('function');
+        expect(typeof sayHello).toBe("function");
     });
     it("should never return an 'undefined' as a result", function(){
-        expect(sayHello).not.toBe(undefined);
+        expect(sayHello()).not.toBe(undefined);
     });
     it("is it a string that it outputs", function(){
-        expect(typeof sayHello()).toBe('string');
+        expect(typeof sayHello()).toBe("string");
     })
     it("does actual output match expected output", function(){
         expect(sayHello("Jane")).toBe("Hello Jane.");
+    })
+    it("does actual output match expected output", function(){
+        expect(sayHello("Alex")).toBe("Hello Alex.");
     })
 });
