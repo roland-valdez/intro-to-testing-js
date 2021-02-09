@@ -30,4 +30,7 @@ describe('sayHello', function(){
     it("does actual output match expected output", function(){
         expect(sayHello("Alex")).toBe("Hello Alex.");
     })
+    it("does actual output match expected output", function(){
+        expect(sayHello("Pat")).toBe("Hello Pat.");
+    })
 });
