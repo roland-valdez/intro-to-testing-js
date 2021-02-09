@@ -33,4 +33,13 @@ describe('sayHello', function(){
     it("does actual output match expected output", function(){
         expect(sayHello("Pat")).toBe("Hello Pat.");
     })
+    it("does it return Hello World if input undefined", function(){
+        expect(sayHello()).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is true", function(){
+        expect(sayHello(true)).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is false", function(){
+        expect(sayHello(false)).toBe("Hello World.");
+    })
 });

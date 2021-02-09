@@ -3,6 +3,8 @@ function helloWorld() {
     return "Hello, World!";
 }
 function sayHello(string){
-var st
-    return "Hello " + string + ".";
+    if (string === undefined || string === true || string === false){
+        string = "World";
+    }
+  return "Hello " + string + ".";
 }
