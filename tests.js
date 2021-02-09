@@ -21,4 +21,7 @@ describe('sayHello', function(){
     it("should never return an 'undefined' as a result", function(){
         expect(sayHello).not.toBe(undefined);
     });
+    it("is it a string that it outputs", function(){
+        expect(typeof sayHello()).toBe('string');
+    })
 });
