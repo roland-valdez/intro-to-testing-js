@@ -42,4 +42,22 @@ describe('sayHello', function(){
     it("does it return Hello World if input is false", function(){
         expect(sayHello(false)).toBe("Hello World.");
     })
+    it("does it return Hello World if input is null", function(){
+        expect(sayHello(null)).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is blank", function(){
+        expect(sayHello("")).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is 2.3", function(){
+        expect(sayHello(2.3)).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is '5''", function(){
+        expect(sayHello("5")).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is {}", function() {
+        expect(sayHello({})).toBe("Hello World.");
+    })
+    it("does it return Hello World if input is []", function() {
+        expect(sayHello([])).toBe("Hello World.");
+    })
 });
